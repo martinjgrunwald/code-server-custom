@@ -35,6 +35,7 @@ def searchMovie(movie_string):
     json_string = getResponse(URL, PARAMS)
     json_data = json.loads(json_string)
     parseJSON(json_data)
+    #test
 
 def parseJSON(data):
     if len(data['results']) == 0:
